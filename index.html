@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin's form</title>
+    <link rel="stylesheet" href="./style.css"> 
+</head>
+<body>
+    <div class="main">
+        <div class="image">
+            <img src="./images/odin-lined.png">
+            <h1>ODIN</h1>
+        </div>
+
+
+        <form action="" method="post">
+
+            <h2 class="mini">
+                This is not a real online service! You know you need something 
+                like this in your life to help you realize your deepest dreams.
+            </h2>
+            <legend>Contact Details:</legend>
+
+
+           <fieldset>
+            <div>
+                <label for="first-name">First Name:</label><br>
+                <input type="text" id="first-name" class="size" name="first-name" placeholder="dav..." required>
+            </div>
+    
+            <div>
+                <label for="first-name">Last Name:</label><br>
+                <input type="text" id="last-name" class="size" name="last-name" placeholder="Akin..." required>
+            </div>
+           </fieldset>
+    
+    
+           <fieldset>
+            <div>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" class="size" name="email" placeholder="dav@gmail.com" required>
+            </div>
+    
+            <div>
+                <label for="first-name">Last Name:</label><br>
+                <input type="tel" id="tel" class="size" name="tel" placeholder="+234" required>
+            </div>
+           </fieldset>
+    
+           <fieldset>
+            <div>
+                <label for="password">password</label><br>
+                <input type="password" class="size" maxlength="8" minlength="4" class="password" id="password" name="password" placeholder="****" required>
+            </div>
+    
+            <div>
+                <label for="confirm-password">confirm password</label><br>
+                <input type="password" class="size" maxlength="8" minlength="4"  id="confirm-password" name="confirm-password" placeholder="***" required>
+            </div>
+           </fieldset>
+
+           <fieldset class="logs">
+            <button type="reset">Create Account</button>
+           <p>Already have a account <a href="#">Log in</a></p>
+           </fieldset>
+        </form>
+    </div>
+</body>
+</html>

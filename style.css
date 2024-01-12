@@ -1,0 +1,107 @@
+:root{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(./images/neom-tUqMoFE_eAE-unsplash.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+form{
+    flex-grow:1 ;
+    background-color: #fff;
+    align-items: center;
+}
+.mini{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items:flex-start;
+    padding: 30px;
+    margin: 0;
+    background-color: #f1edf1;
+}
+.mini::after{
+    content: "You know you want to!";
+    padding-top: 20px;
+}
+
+fieldset{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px 30px;
+    gap: 150px;
+    border: none;
+}
+
+legend{
+    text-align: left;
+    font-size: 2rem;
+    padding: 30px 40px;
+}
+
+.size{
+    width: 100%;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+.image{
+    background-color: black;
+    opacity: 0.5;
+    width: 40%;
+    padding: 10px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    color: #fff;
+}
+img{
+    width: 100px;
+    height: auto;
+}
+
+button{
+    background-color: rgb(36, 121, 36);
+    color: #ffffffe8;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.logs{
+    display: block;
+}
+.logs >p{
+    font-weight: bold;
+}
+*:required{
+    content: "form must be filled";
+}
+#password:required:invalid{
+    border: 2px solid red;
+}
+
+#confirm-password:required:invalid{
+    border: 2px solid red;
+}
+#password:required:valid{
+    border: 2px solid rebeccapurple;
+}
+#confirm-password:required:valid{
+    border: 2px solid rebeccapurple;
+}
